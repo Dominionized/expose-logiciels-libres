@@ -42,10 +42,12 @@
 			<div class="slides">
                 <section>
                     <h1>Les logiciels libres</h1>
+                    <h3>Par <i>les Cucurbitacées</i></h3>
                     Dominique Bégin<br/>Valérie Lapointe<br/>Anthony Sylvain
                 </section>
                 <section>
                     <h2>La création de logiciels</h2>
+                    <img src="assets/compilation.svg" />
                 </section>
 				<section>
 					<section>
@@ -53,6 +55,7 @@
 					</section>
 					<section>
 						<h3>Contexte historique</h3>
+
 					</section>
 					<section data-background="https://trisquel.info/files/richard%20stallman.jpg">
 						<h3>Richard Stallman</h3>
@@ -135,7 +138,9 @@
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'socket.io/socket.io.js', async: true },
+                    { src: 'plugin/notes-server/client.js', async: true}
 				]
 			});
 
